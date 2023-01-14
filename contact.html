@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- custom font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="icon" type="image/x-icon" href="/final-imgs/favicon-32x32.png">
+    <!-- css styles -->
+    <link rel="stylesheet" href="/css/final-main.css">
+    <title>Contact us</title>
+
+</head>
+<body>
+    <header>
+        <p>Free Shipping on orders $50 USD and up</p>
+    </header>
+    <!-- navigation ----------------------------------------------------------------------------- -->
+    <div id="nav">
+        <div id="logo-menu-container">
+            <div class="hamburger-nav">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!-- mobile logo -->
+            <a href="/index.html"><img src="/final-imgs/logo.svg" alt="logo" id="mobile-logo"></a>
+            <!-- cart list -->
+            <ul id="cart-list" class="cart-mobile">
+                <li>
+                    <a href="/cart.html">
+                        <p id="cart-icon"><img src="/final-imgs/icon-cart.svg" alt="cart icon"></p>
+                        <p class="cart-icon-quantity" id="home-cart"></p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        
+        <ul id="main-nav">
+            <li><a href="/index.html"><img src="/final-imgs/logo.svg" alt="logo"></a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/landing-page.html">Shop</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <ul id="cart-list" class="cart-web">
+            <li>
+                <a href="/sneaker-app/cart.html">
+                    <p id="cart-icon"><img src="/js-project/final-imgs/icon-cart.svg" alt="cart icon"></p>
+                    <p class="cart-icon-quantity" id="home-cart" class="cart-web"></p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- mobile nav substitution -->
+    <ul id="mobile-nav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/landing-page.html">Shop</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+    </ul>
+
+    <div class="container-fluid">
+        <body>
+            <main>
+              
+                <h1>Contact us</h1>
+               <p id="required_alert">  </p>
+               <form action="" method="post">
+                  <div class="mb-3 mt-3">
+                     <input type="text" name="first_name" id="first_name" placeholder="Your first name" value=""><br>
+                     <label for="firs tname" id="fn_label"></label>
+                     <span>*</span>
+                  </div>
+                  <div class="mb-3 mt-3">
+                     <input type="text" name="last_name" id="last_name" placeholder="Your last name" value=""><br>
+                     <label for="last name" id="ln_label"></label>
+                     <span>*</span>
+                  </div>
+                  <div class="mb-3 mt-3">
+                     <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" value="">
+                     <label for="email" id="em_label"></label>
+                     <span>*</span>
+                  </div>
+                  <div class="mb-3 mt-3">
+                     <textarea class="form-control" rows="5" id="message" name="message" cols="30" placeholder="Write your message here" value=""></textarea><br>
+                     <label for="message" id="msg_label"></label>
+                     <span>*</span>
+                  </div>
+                    <label>&nbsp;</label>
+                    <a href="/confirmation.html">
+                        <input type="button" id="send" value="Send" >
+                    </a>
+                  </div>
+               </form>
+                   <!-- Dont' delete this line -->
+               <!--  Okay to put HTML BELOW THIS LINE --> 
+            </main>
+    </div>
+
+    <hr>
+    <footer>
+        <a href="/index.html"><img src="/final-imgs/logo.svg" alt=""></a>
+        <p>Quick links</p>
+        <ul>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/privacy.html">Privacy policy</a></li>
+        </ul>
+    </footer>
+<!-----------------------------------------------Javascript---------------------------------------------------------------------->
+    <script src="/js/contact-validation.js"></script>
+</body>
+</html>

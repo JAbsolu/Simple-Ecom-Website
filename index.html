@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- custom font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/final-imgs/favicon-32x32.png">
+    <!-- css styles -->
+    <link rel="stylesheet" href="/css/final-main.css">
+    <title>Home</title>
+
+</head>
+<body>
+    <header>
+        <p>Free Shipping on orders $50 USD and up</p>
+    </header>
+    <!-- navigation ----------------------------------------------------------------------------- -->
+    <div id="nav">
+        <div id="logo-menu-container">
+            <div class="hamburger-nav">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!-- mobile logo -->
+            <a href="/index.html"><img src="/final-imgs/logo.svg" alt="logo" id="mobile-logo"></a>
+            <!-- cart list -->
+            <ul id="cart-list" class="cart-mobile">
+                <li>
+                    <a href="/cart.html">
+                        <p id="cart-icon"><img src="/final-imgs/icon-cart.svg" alt="cart icon"></p>
+                        <p class="cart-icon-quantity" id="home-cart"></p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <ul id="main-nav">
+            <li><a href="/index.html"><img src="/final-imgs/logo.svg" alt="logo"></a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/landing-page.html">Shop</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <ul id="cart-list" class="cart-web">
+            <li>
+                <a href="/cart.html">
+                    <p id="cart-icon"><img src="/final-imgs/icon-cart.svg" alt="cart icon"></p>
+                    <p class="cart-icon-quantity" id="home-cart" class="cart-web"></p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- mobile nav substitution -->
+    <ul id="mobile-nav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/landing-page.html">Shop</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+    </ul>
+
+    <div class="container-fluid">
+        <!-- banner section ------------------------------------------------------------------ -->
+        <a href="/landing-page.html" id="banner-cta">
+            <div id="banner" >
+                <img src="/final-imgs/SNEAKERS1.png" alt="sneaker">
+                <img src="/final-imgs/SNEAKERS.png" alt="sneaker" class="mobile-hide">
+            </div>
+         </a>
+        <section id="home-section-about">
+            <h1>About our brand</h1>
+            <p>
+                Our brand is dedicated to creating high-quality, stylish sneakers that blend function and fashion. 
+                From casual kicks to performance-focused designs, we have something for every sneaker enthusiast. 
+            </p>
+            <a href="/about.html">Learn more</a>
+        </section>
+
+        <section id="home-product-card">
+            <div class="card-img">
+                <img src="/final-imgs/image-product-1.jpg" alt="sneaker">
+            </div>
+            <div>
+                <h2 class="product-name">Unisex Flat Casual Sneaker</h2>
+                <p>
+                    <span class="price"></span> &nbsp; &nbsp;
+                    <span class="price-compared"></span> &nbsp; &nbsp;
+                    <span class="card-sale-promo">sale</span>
+                </p>
+                <br>
+                <p class="card-description">
+                    These low-profile sneakers are our perfect casual wear
+                    companion. Featuring a durable rubber outer sole, they'll
+                    withstand everything the weather can offer
+                </p>
+                <br>
+                <!-- <p>Quantity</p>
+                <div class="quantity">
+                    <img src="/js-project/final-imgs/icon-minus.svg" alt="minus icon" class="minus">
+                    <p class="quantity-num">0</p>
+                    <img src="/js-project/final-imgs/icon-plus.svg" alt="plus icon" class="plus">
+                </div> -->
+                <a href="/landing-page.html" id="home-cta-link">
+                <p class="card-cta home-card-cta">
+                    View Product
+                </p>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- testimonial section -->
+        <div id="testimonial-section">
+            <div class="testimonial-inner">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar-1">
+                <h3>Natalie</h3>
+                <p>Very good fit. I love the gold tone eyelets and the matching white rubber side soles. 
+                    The soles are classic tan. The cloth uppers have a subtle cross weave pattern. 
+                    I’ve worn them for three hours so far and they are very comfortable
+                </p>
+                <span>★★★★★</span>
+            </div>
+            <div class="testimonial-inner">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar-2">
+                <h3>Erick</h3>
+                <p>Shoe was very comfortable for days without a lot of walking. When walking 
+                    long distances there was some rubbing on the achilles. Overall a comfortable 
+                    well fitting shoe, looks good for both casual and business casual environments.
+                </p>
+                <span>★★★★★</span>
+            </div>
+            <div class="testimonial-inner">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar-3">
+                <h3>Lindsey</h3>
+                <p>I'm 5'3" so I tend to be thoughtful on the types of flats I wear with with casual dresses,
+                    skirts and capri pants. Some just don't work as they close right at the base of my ankles
+                    to cut off the leg at the ankle.
+                </p>
+                <span>★★★★★</span>
+            </div>
+        </div>
+        <!-- testimonial end -->
+        <!-- email sbscription -->
+        <div id="email-subscription">
+            <h2>Subscribe to our emails</h2>
+            <p>Join our email list for exclusive offers and the latest news.</p>
+            <div id="email-input-container">
+                <input type="email" placeholder="Email" autocomplete="email" autocorect="off" value="" class="subscribtion-email">
+                <button class="subscription-btn">submit</button>   
+                <br>             
+                <span></span>                
+            </div>
+        </div>
+    </div>
+    </div>
+    <hr>
+    <footer>
+        <a href="/index.html"><img src="/final-imgs/logo.svg" alt=""></a>
+        <p>Quick links</p>
+        <ul>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/privacy.html">Privacy policy</a></li>
+        </ul>
+    </footer>
+<!-----------------------------------------------Javascript---------------------------------------------------------------------->
+    <script src="/js/final-project.js"></script>
+</body>
+</html>

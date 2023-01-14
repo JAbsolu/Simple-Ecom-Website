@@ -1,0 +1,193 @@
+
+/* general styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+:root {
+    --main-font: raleway;
+    --fs-rg: 1rem;
+    --h1-size: 2.5rem;
+    --h2-size: 2.3rem;
+    --h3-size: 2rem;
+    --clr-black: #000;
+    --clr-grey: #262626;
+    --main-color: #ff7d1c;
+    --clr-white: #fff;
+    --accent-clr: #fff4ec;
+}
+
+h1 {
+    margin-top: 1.5em !important;
+    text-align: left !important;
+}
+
+main {
+    padding: 0 25%;
+}
+
+/* form */
+
+form {
+    color: var(--clr-black);
+    margin-top: 3em;
+    min-height: 75vh;
+}
+
+input::placeholder {
+    font-size: 13pt;
+}
+
+form div {
+    margin: 0 !important;
+    display: block;
+    margin: 2em 0 !important;
+}
+
+form:active {
+    outline: var(--accent-clr);
+}
+
+#first_name, #last_name {
+    width: 90%;
+    padding: 15px;
+    border: solid #000;
+    border-radius: 5px;
+    background-color: var(--accent-clr);
+}
+
+label {
+    display: none;
+    color: red;
+}
+
+.error { /* error message*/
+    display: block;
+}
+
+.validated {
+    display: block;
+    color: green;
+}
+
+#confirmed-text {
+    color: green !important;
+}
+
+#email {
+    width: 90% !important;
+    border:solid #000;
+    padding: 15px;
+    /* margin-left: 3em; */
+    border-radius: 5px;
+    background-color: var(--accent-clr);
+}
+
+#message {
+    width: 90% !important;
+    font-family: var(--main-font);
+    padding: 15px;
+    border: solid #000;
+    height: 10em !important;
+    border-radius: 5px;
+    background-color: var(--accent-clr);
+}
+
+#message::placeholder {
+    font-size: 13pt;
+}
+
+span {
+    display: none;
+}
+
+span.active {
+    display: block;
+    color: red;
+}
+/* buttons */
+
+#send {
+    padding: 10px;
+    border: solid var(--clr-black);
+    border-radius: 5px;
+    margin: 5px;
+    width: 7em;
+    height: 2.3em;
+    cursor: pointer;
+    background-color: var(--clr-black);
+    font-size: 1.2rem;
+    color: var(--clr-white);
+}
+
+#send:hover {
+    background: var(--clr-grey)
+}
+
+
+#required_alert {
+    /* display: none; */
+    color: red;
+}
+
+/* errors */
+
+@media (max-width:830px) {
+    main {
+        padding: 0 10%;
+    }
+}
+
+@media (max-width:950px) {
+
+    p {
+        font-size: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 1.8rem !important;
+    }
+
+    main {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #first_name, 
+    #last_name,
+    #email {
+        height: 1em;
+        font-size: 1rem;
+    }
+
+    #first_name::placeholder, 
+    #last_name::placeholder, 
+    #email::placeholder, 
+    #message::placeholder {
+        font-size: 1.2rem;
+    }
+
+    #message {
+        height: 12em !important;
+        font-size: 1.5rem;
+    }
+
+    #send {
+        width: 6em !important;
+        height: 2.5em !important;
+        font-size: 1rem !important;
+    }
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
